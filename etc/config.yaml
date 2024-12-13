@@ -1,0 +1,13 @@
+db:
+  ip: 127.0.0.1
+  port: 3306
+  database: chain_stats
+  user: root
+  password: "qq851126"
+  charset: utf8mb4
+  loc: Asia/Shanghai
+  parseTime: true
+  key: "baoquan0123456789"
+  iv: "GVk_kos3=3u$u3w1"
+  ciphertext: false
+node_url: "ws://192.168.4.117:8886"
