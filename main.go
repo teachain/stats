@@ -11,7 +11,9 @@ import (
 	"syscall"
 )
 
-var configFile *string = flag.String("config", "./etc/config.yaml", "Path to config file")
+var (
+	configFile = flag.String("config", "./etc/config.yaml", "Path to config file")
+)
 
 func main() {
 	flag.Parse()

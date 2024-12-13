@@ -1,0 +1,13 @@
+services:
+  chain_stats:
+    image: chain/stats:latest
+    container_name: chain_stats
+    network_mode: host
+    restart: always
+    volumes:
+      - ./etc:/app/etc
+    command: /app/stats -config /app/etc/config.yaml
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1g"
